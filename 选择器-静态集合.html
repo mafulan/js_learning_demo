@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li class="box"></li>
+        <li id="li1" class="box1"></li>
+        <li title="我是title"></li>
+        <li class="box box1"></li>
+    </ul>
+    <script>
+    // var oLi = document.querySelector("li:nth-child(1)");
+    // var oLi = document.querySelector(".box");
+    // var oLi = document.querySelector(".box.box1");
+    // var oLi = document.querySelector("#li1");
+    // var oLi = document.querySelector("li[title='我是title']");
+    // oLi.style.backgroundColor = "red";
+    var aLi = document.querySelectorAll("li");
+    document.onclick = function (){
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].parentNode.removeChild(aLi[i]);
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1 box2 box3"></div>
+    <script>
+    var oDiv = document.getElementsByTagName("div")[0];
+    // console.log(oDiv.classList.length);
+    // console.log(oDiv.classList.contains("box0"));
+    // console.log(oDiv.classList.add("box0","box4","box1"));
+    // console.log(oDiv.classList.remove("box1"));
+    document.onclick = function (){
+        oDiv.classList.toggle("box0");
+    }
+    </script>
+</body>
+</html>
